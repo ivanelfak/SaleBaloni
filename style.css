@@ -355,7 +355,7 @@ h1:before {
     content: attr(data-text);
     position: absolute;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 57rem;
     white-space: nowrap;
     color: var(--mainBlue);
     animation: loading 8s linear infinite;
