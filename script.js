@@ -32,7 +32,11 @@ $(document).ready(function () {
 
     $('.banner-text a').ready(function(direction){
         $('.banner-text a').addClass('animated flash');
-    })
+    });
+
+    $('.contact-member-footer i').ready(function(direction){
+        $('.contact-member-footer i').addClass('animated flash');
+    });
 
 
 })
