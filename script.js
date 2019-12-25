@@ -38,5 +38,10 @@ $(document).ready(function () {
         $('.contact-member-footer i').addClass('animated flash');
     });
 
+    $('.srt-btn').on('click', function(){
+    $('.srt-btn').removeClass('selected');
+    $(this).addClass('selected');
+});
+
 
 })

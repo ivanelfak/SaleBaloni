@@ -16,6 +16,16 @@
   --mainCream: #eddea4;
   --mainWhite: #f5f3f5;
   --secondColor: #d9e5d9;
+  --mainRose: rgb(229,0,82);
+  --mainwhiteGrey: rgb(223,220,222);
+  --mainwhitePink: rgb(250,191,196);
+  --maindarkBlue: rgb(19,50,117);
+  --mainwhiteGreen: rgb(199,212,0);
+  --mainwhiteBlue: #00a3da;
+  --mainRed: #d8232a;
+  --mainGreen: #84bf41;
+  --mainOrange: #f4b827;
+  --mainDark: #4a4a4a;
 }
 
 body,
@@ -33,7 +43,11 @@ html {
 
 section {
   min-width: 100vw;
+  
+}
 
+#nav{
+  background: transparent;
 }
 
 #nav ul {
@@ -52,11 +66,13 @@ section {
 
 #nav ul li a {
   text-decoration: none;
+  text-transform: uppercase;
   display: block;
   color: var(--mainColor);
-  background: var(--mainWhite);
+  background: transparent;
   padding: 10px;
   font-size: 20px;
+  font-weight: 900;
   transition: color 2s ease, background 2s ease;
 }
 
@@ -66,7 +82,7 @@ section {
 }
 
 .nav-logo {
-  background: var(--mainColor);
+  background: transparent;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -80,6 +96,7 @@ section {
 }
 
 .new-nav {
+  background: var(--mainWhite)!important;
   position: fixed;
   width: 100vw;
   z-index: 10 !important;
@@ -89,7 +106,7 @@ section {
   #nav {
     border-top: 5px solid var(--mainBlue);
     display: flex;
-    background: var(--mainWhite);
+    background: transparent;
   }
 
   #nav ul {
@@ -258,15 +275,28 @@ header {
   grid-template-columns: repeat(2, 1fr);  
 }
 .button-group button {
+  width: 150px;
+  height: 150px;
   display: inline-block;
   padding: 10px 10px;
   font-size: 10px;
   margin: 5px;
   border-radius: 5px;
   text-transform: uppercase;
+  font-weight: 800;
   color: var(--mainWhite);
-  background: var(--mainBlue);
+  background: var(--mainBlue), opacaty:0.5;
+  transition: background 2s ease;  
 }
+
+.button-group button:hover {
+background: var(--mainBlue);
+}
+
+.selected{
+  background: var(--mainRose)!important;
+}
+
 .picture-container {
   min-height: 100%;
   display: grid;
@@ -402,8 +432,9 @@ display: none
   margin: 50px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 10.5s steps(40, end),
+    typing 10.5s steps(40, end) infinite ,
     blink-caret .5s step-end infinite;
+  animation-delay: 5s;
 }
 
 /* The typing effect */
@@ -605,7 +636,8 @@ display: none
 }
 
 .team-member img {
-  width: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin-top: -35px;
 }
