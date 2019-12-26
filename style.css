@@ -253,7 +253,7 @@ header {
 #work {
   min-height: 90vh;
   background: linear-gradient(rgba(255, 201, 20, 0.3), rgba(255, 201, 20, 0.3)),
-    url(img/proizvodi/Proizvodi_bek.jpg) center/cover no-repeat fixed;
+    url(img/proizvodi/Baloni_Nebo_1.jpg) center/cover no-repeat fixed;
 }
 
 .work-center {
@@ -282,19 +282,23 @@ header {
   font-size: 10px;
   margin: 5px;
   border-radius: 5px;
+  border: 2px solid var(--mainRose);
   text-transform: uppercase;
   font-weight: 800;
-  color: var(--mainWhite);
-  background: var(--mainBlue), opacaty:0.5;
-  transition: background 2s ease;  
+  color: var(--mainRose);
+  background: var(--mainWhite);
+  transition: background 2s ease, border 2s ease, color 2s ease;  
 }
 
 .button-group button:hover {
 background: var(--mainBlue);
+border: 2px solid var(--mainBlue);
+color: var(--mainWhite);
 }
 
 .selected{
   background: var(--mainRose)!important;
+  color: var(--mainWhite)!important;  
 }
 
 .picture-container {
@@ -432,8 +436,8 @@ display: none
   margin: 50px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 10.5s steps(40, end) infinite ,
-    blink-caret .5s step-end infinite;
+    typing 10.5s steps(40, end)  ,
+    blink-caret .5s step-end ;
   animation-delay: 5s;
 }
 
@@ -611,7 +615,7 @@ display: none
 
 #team {
   padding: 40px 0;
-  background: var(--mainGrey);
+  background: var(--mainwhiteGrey);
 }
 
 #team .title-subheading {

@@ -1,0 +1,23 @@
+{
+  "name": "app_baloni_mod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "live-server index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanelfak/SaleBaloni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanelfak/SaleBaloni/issues"
+  },
+  "homepage": "https://github.com/ivanelfak/SaleBaloni#readme"
+}
