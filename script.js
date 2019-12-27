@@ -43,5 +43,10 @@ $(document).ready(function () {
     $(this).addClass('selected');
 });
 
+    $('.picture-container').parent().on('dblclick', function(){
+    /*$('.button-container').removeClass('dataLoaderNone');  */
+    location.reload(); 
+    
+}); 
 
 })
