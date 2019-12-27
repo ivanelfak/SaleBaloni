@@ -415,7 +415,24 @@ header {
   transition: background 2s ease, border 2s ease, color 2s ease;
 }
 
+
+.btn-back{ 
+  display: block;    
+  padding: 10px 10px;
+  font-size: 60px;  
+  align-self: center; 
+  margin: 5px auto;   
+  background: transparent; 
+  color: var(--mainRose);  
+  transition: background 2s ease, border 2s ease, color 2s ease;
+}
 .button-group button:hover {
+  background: var(--mainBlue);
+  border: 2px solid var(--mainBlue);
+  color: var(--mainWhite);
+}
+
+.btn-back:hover{  
   background: var(--mainBlue);
   border: 2px solid var(--mainBlue);
   color: var(--mainWhite);

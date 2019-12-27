@@ -2,6 +2,7 @@ const productsDom = document.querySelector(".picture-container");
 const dataLoaderDom = document.querySelector(".dataLoader");
 const buttons = document.querySelectorAll(".srt-btn");
 const buttonAll = document.querySelector(".button-container");
+const buttonSrt = document.querySelector(".btn-back");
 
 
 
@@ -85,6 +86,7 @@ const client = contentful.createClient({
                   if(tpy === cart[i].tpy){ 
         dataLoaderDom.classList.add("dataLoaderNone");
         buttonAll.classList.add("dataLoaderNone");
+        buttonSrt.classList.remove("dataLoaderNone");               
                     result += `                    
         <div class = "product ${cart[i].tpy}">
         <div class = "img-container">
