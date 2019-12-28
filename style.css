@@ -147,7 +147,7 @@ header {
 }
 
 #banner {
-  flex: 1 0 auto;  
+  flex: 1 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@ header {
   text-transform: uppercase;
   color: var(--mainColor);
   font-size: 2.5rem;
-  font-style: italic;  
+  font-style: italic;
   animation-delay: 2s;
 }
 
@@ -171,27 +171,27 @@ header {
   text-transform: uppercase;
   color: var(--mainBlue);
   font-size: 4rem;
-  font-style: italic;  
+  font-style: italic;
 }
 
 .banner-text #lo {
   text-transform: uppercase;
   color: var(--mainRose);
   font-size: 4rem;
-  font-style: italic;  
+  font-style: italic;
 }
 
 .banner-text #ni {
   text-transform: uppercase;
   color: var(--mainGreen);
   font-size: 4rem;
-  font-style: italic;  
+  font-style: italic;
 }
 
 .banner-line {
   width: 90%;
   height: 6px;
-  background: linear-gradient(to right, #f52929, #ffc914, #00a3da, #e50052, #84bf41);  
+  background: linear-gradient(to right, #f52929, #ffc914, #00a3da, #e50052, #84bf41);
   margin: 15px auto;
 }
 
@@ -416,23 +416,24 @@ header {
 }
 
 
-.btn-back{ 
-  display: block;    
+.btn-back {
+  display: block;
   padding: 10px 10px;
-  font-size: 60px;  
-  align-self: center; 
-  margin: 5px auto;   
-  background: transparent; 
-  color: var(--mainRose);  
+  font-size: 60px;
+  align-self: center;
+  margin: 5px auto;
+  background: transparent;
+  color: var(--mainRose);
   transition: background 2s ease, border 2s ease, color 2s ease;
 }
+
 .button-group button:hover {
   background: var(--mainBlue);
   border: 2px solid var(--mainBlue);
   color: var(--mainWhite);
 }
 
-.btn-back:hover{  
+.btn-back:hover {
   background: var(--mainBlue);
   border: 2px solid var(--mainBlue);
   color: var(--mainWhite);
@@ -479,6 +480,7 @@ header {
 .img-container:hover {
   transform: scale(2.5);
 }
+
 @media screen and (min-width: 776px) {
   #work {
     min-height: 70vh;
@@ -534,7 +536,9 @@ header {
     min-width: 40%;
     font-size: 5rem;
   }
-};
+}
+
+;
 
 h1 {
   position: relative;
@@ -562,9 +566,11 @@ h1:before {
 
 .dataLoaderNone {
   display: none
-};
+}
 
-#about {  
+;
+
+#about {
   min-height: 80vh;
   display: flex;
   flex-direction: row;
@@ -605,15 +611,18 @@ h1:before {
     blink-caret .5s step-end;
   animation-delay: 5s;
 }
+
 /* The typing effect */
 @keyframes typing {
   from {
     width: 0
   }
+
   to {
     width: 100%
   }
 }
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
 
@@ -621,6 +630,7 @@ h1:before {
   to {
     border-color: transparent
   }
+
   50% {
     border-color: var(--maninYellow)
   }
@@ -863,43 +873,6 @@ h1:before {
   width: 90%;
 }
 
-
-@media screen and (min-width:1280px) {
-  .section-group {
-    display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    grid-column-gap: 10px;
-  }
-
-  .contact-member {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    justify-self: center;
-    text-align: center;
-    order: 1;
-    padding: 10px;
-    margin: 15px;
-    margin-bottom: 50px;
-  }
-
-  .contact-member img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .contact-form {
-    order: 0;
-    justify-self: center;
-    width: 80%;
-    align-self: center;
-  }
-}
-
-
-
 input[type=text],
 input[type=email],
 select,
@@ -943,24 +916,27 @@ input[type=checkbox] {
   margin: 10px 5px 10px 0;
 }
 
-.form-button{
+.form-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  }
+  width: 100%;
+}
 
-.form-button a{
-    align-self: center;
-    text-align: center;
-    text-transform: uppercase; 
-    color: var(--mainBlue);  
-    text-decoration: none;
-    font-size: 0.8rem;     
-};
+.form-button a {
+  align-self: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--mainBlue);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+;
 
 
-input[type=submit]{
+input[type=submit] {
   align-self: center;
 }
 
@@ -985,7 +961,61 @@ input[type=submit]{
   background: rgba(209, 46, 46, 0.8);
 }
 
+@media screen and (min-width:478px) {
+  .form-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
 
+  }
+
+
+}
+
+@media screen and (min-width:1280px) {
+  .section-group {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-column-gap: 10px;
+  }
+
+  .contact-member {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    order: 1;
+    padding: 10px;
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+
+  .contact-member img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-form {
+    order: 0;
+    justify-self: center;
+    width: 80%;
+    align-self: center;
+  }
+
+  .form-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
+
+  }
+}
 
 footer {
   background: var(--mainBlack);
@@ -1007,7 +1037,7 @@ footer {
   font-size: 25px;
 }
 
-.footer-number{
+.footer-number {
   display: none;
 }
 
@@ -1015,7 +1045,7 @@ footer {
   text-transform: uppercase;
   color: var(--mainColor);
   font-size: 0.8rem;
-  font-style: italic;  
+  font-style: italic;
   animation-iteration-count: infinite;
   animation-delay: 3s;
 }
@@ -1025,23 +1055,24 @@ footer {
   color: var(--maninYellow);
 }
 
-.footer-number #ba {  
-  color: var(--mainBlue);   
+.footer-number #ba {
+  color: var(--mainBlue);
 }
 
-.footer-number #lo {  
-  color: var(--mainRose);   
+.footer-number #lo {
+  color: var(--mainRose);
 }
 
-.footer-number #ni {  
-  color: var(--mainGreen);   
+.footer-number #ni {
+  color: var(--mainGreen);
 }
 
 @media screen and (max-width:1280px) {
 
   .footer-number {
     display: block;
-  } 
+  }
+
   .footer-icons {
     font-size: 20px;
     display: none;
