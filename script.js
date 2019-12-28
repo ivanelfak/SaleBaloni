@@ -48,4 +48,7 @@ $(document).ready(function () {
     location.reload();    
 }); 
 
+     $('.footer-number h1').ready(function(direction){
+        $('.footer-number h1').addClass('animated flash');
+    });
 })

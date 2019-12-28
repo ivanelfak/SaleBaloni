@@ -479,7 +479,6 @@ header {
 .img-container:hover {
   transform: scale(2.5);
 }
-
 @media screen and (min-width: 776px) {
   #work {
     min-height: 70vh;
@@ -500,7 +499,7 @@ header {
   }
 
   .picture-container {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .dataLoader {
@@ -517,13 +516,13 @@ header {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .button-container {
     flex: 0 0 70%;
   }
 
   .picture-container {
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
 
   .product-img {
@@ -535,7 +534,6 @@ header {
     min-width: 40%;
     font-size: 5rem;
   }
-
 };
 
 h1 {
@@ -862,7 +860,7 @@ h1:before {
 
 
 .contact-form {
-  width: 100%;
+  width: 90%;
 }
 
 
@@ -988,9 +986,44 @@ footer {
   font-size: 25px;
 }
 
-@media screen and (max-width:478px) {
+.footer-number{
+  display: none;
+}
+
+.footer-number h1 {
+  text-transform: uppercase;
+  color: var(--mainColor);
+  font-size: 1rem;
+  font-style: italic;  
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+.footer-number #le {
+  text-transform: uppercase;
+  color: var(--maninYellow);
+}
+
+.footer-number #ba {  
+  color: var(--mainBlue);   
+}
+
+.footer-number #lo {  
+  color: var(--mainRose);   
+}
+
+.footer-number #ni {  
+  color: var(--mainGreen);   
+}
+
+@media screen and (max-width:1280px) {
+
+  .footer-number {
+    display: block;
+  } 
   .footer-icons {
     font-size: 20px;
+    display: none;
   }
 
   .footer-text {
