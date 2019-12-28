@@ -306,9 +306,10 @@
                         <div class="col span-1-of-3">
                             <label for="news">Obavestenja</label>
                         </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Da, molim
-                        </div>
+                        <div class="col span-1-of-3 form-attach">
+                            <input type="checkbox" name="news" id="news" checked>Da, molim
+                            <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                        </div>                        
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
@@ -316,7 +317,7 @@
                         </div>
                         <div class="col span-2-of-3">
                             <textarea name="message" id="message" cols="30" rows placeholder="Vasa poruka"></textarea>
-                        </div>
+                        </div>                                                
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
@@ -324,7 +325,7 @@
                         </div>
                         <div class="form-button">
                             <input type="submit" value="Posaljite poruku">
-                            <a href="uploads/Porudzbina.pdf" target="_blank">Primer porudzbine</a>
+                            <a href="uploads/Porudzbina.xlsx" download="Porudzbina.xlsx">Primer porudzbine</a>
                         </div>
                     </div>
             </div>
