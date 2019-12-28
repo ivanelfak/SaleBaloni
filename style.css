@@ -943,6 +943,27 @@ input[type=checkbox] {
   margin: 10px 5px 10px 0;
 }
 
+.form-button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  }
+
+.form-button a{
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase; 
+    color: var(--mainBlue);  
+    text-decoration: none;
+    font-size: 0.8rem;     
+};
+
+
+input[type=submit]{
+  align-self: center;
+}
+
 *:focus {
   outline: none;
 }
