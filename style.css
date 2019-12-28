@@ -993,7 +993,7 @@ footer {
 .footer-number h1 {
   text-transform: uppercase;
   color: var(--mainColor);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-style: italic;  
   animation-iteration-count: infinite;
   animation-delay: 3s;
