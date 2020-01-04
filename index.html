@@ -262,7 +262,7 @@
                 <img src="img/Logo_2.png" alt="contact-image" class="contact-image">
             </div>
             <div class="form" id="form">
-                <form method="post" action="send_mail.php" class="contact-form">
+                <form method="post" action="sent_mail.php" class="contact-form" enctype="multipart/form-data">
                     <div class="row">
 
                        <!-- <?php if($_GET['success'] == 1) {
@@ -295,10 +295,10 @@
                         </div>
                         <div class="col span-2-of-3">
                             <select name="find-us" id="find-us">
-                                <option value="friends">Prijatelji</option>
-                                <option value="search" selected>Pretragom interneta</option>
-                                <option value="ad">Preko oglasa</option>
-                                <option value="other">Drugo</option>
+                                <option value="Prijatelji">Prijatelji</option>
+                                <option value="Pretragom interneta" selected>Pretragom interneta</option>
+                                <option value="Preko oglasa">Preko oglasa</option>
+                                <option value="Drugo">Drugo</option>
                             </select>
                         </div>
                     </div>
@@ -307,8 +307,9 @@
                             <label for="news">Obavestenja</label>
                         </div>
                         <div class="col span-1-of-3 form-attach">
-                            <input type="checkbox" name="news" id="news" checked>Da, molim
-                            <input type="file" name="file" accept="application/pdf">
+                            <input type="radio" name="news" id="news" value="Da, molim" checked>Da, molim<br>
+                            <input type="radio" name="news" id="news" value="Ne, hvala">Ne, hvala
+                            <input type="file" name="file" id="file" accept="application/pdf">
                         </div>                        
                     </div>
                     <div class="row">
