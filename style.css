@@ -53,7 +53,10 @@ header {
 }
 
 #nav {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8))
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+  position: fixed;
+  width: 100vw;
+  z-index: 10 !important;
 }
 
 #nav ul {
@@ -86,7 +89,7 @@ header {
   display: block;
   background: transparent;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
   transition: color 2s ease;
 }
@@ -129,6 +132,9 @@ header {
 
 .nav-logo img {
   border-radius: 15%;
+  width: 75px;
+  height: 45px;
+  
 }
 
 .nav-logo .fas {
@@ -139,12 +145,12 @@ header {
   color: var(--mainwhitePink);
 }
 
-.new-nav {
+/*.new-nav {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
   position: fixed;
   width: 100vw;
   z-index: 10 !important;
-}
+}*/
 
 #banner {
   flex: 1 0 auto;
@@ -229,12 +235,18 @@ header {
   background: var(--mainColor);
 }
 
+
 @media screen and (min-width: 680px) {
   #nav {
     border-top: 5px solid var(--mainBlue);
     display: flex;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8))
   }
+
+  .nav-logo img {
+  width: 145px;;
+  height: 85px;  
+}
 
   #nav ul {
     display: flex !important;
@@ -251,7 +263,8 @@ header {
 
   #nav ul li a {
     border-radius: 5px;
-    text-align: center;
+    text-align: center;   
+    font-size: 15px; 
   }
 
   #nav ul li:last-of-type,
@@ -286,6 +299,11 @@ header {
   }
 }
 
+@media screen and (min-width: 1100px) {
+#nav ul li a {  
+  font-size: 25px;  
+}
+}
 
 header {
   width: 100vw;
@@ -571,7 +589,7 @@ h1:before {
 ;
 
 #about {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -584,7 +602,7 @@ h1:before {
   position: relative;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 70vh;
   text-align: center;
   background: var(--mainBlue);
   z-index: 0;
@@ -786,8 +804,8 @@ h1:before {
 }
 
 .team-member img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-top: -35px;
 }
@@ -881,10 +899,17 @@ textarea {
   padding: 7px;
   border-radius: 3px;
   border: 2px solid var(--mainBlue);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+input[type=radio]{
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 textarea {
-  height: 100px;
+  height: 100px;  
 }
 
 input[type=submit] {
@@ -998,8 +1023,8 @@ input[type=submit] {
   }
 
   .contact-member img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
 
   .contact-form {
