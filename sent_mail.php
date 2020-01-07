@@ -5,6 +5,7 @@
 $email = $_POST['email'] ;
 $message = $_POST['message'] ;
 $name = $_POST['name'] ;
+$phone = $_POST['phone'] ;
 $error_page = "error_message.html";
 $thankyou_page = "thank_you.html";
 $find_us = $_POST['find-us'] ;
@@ -49,18 +50,20 @@ $mail->addReplyTo($email, $name);
 
 // below we want to set the email address we will be sending our email to.
 $mail->AddAddress("ivan.todorovic.m@gmail.com", "");
+$mail->addBCC($email, $name);
 
 // set word wrap to 50 characters
 $mail->WordWrap = 50;
 // set email format to HTML
 $mail->IsHTML(true);
 
-$mail->Subject = "Dobili ste email sa Vaseg sajta!";
+$mail->Subject = "Porudzbina sa sajta!";
 
 $mail->Body = "<br>Ime: " . $name.
                "<br>Email: " . $email.
                "<br>Obavestenja: " . $news. 
                "<br>Kako ste nas pronasli: "  . $find_us.
+               "<br>Telefon: "  . $phone.
                "<br>Poruka: " . $message;
 
 $mail->AltBody = $message;
