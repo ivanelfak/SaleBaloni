@@ -623,7 +623,8 @@ h1:before {
   /* Keeps the content on a single line */
   margin: 50px auto;
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
+  letter-spacing: -.05em;
+  word-spacing: -7px;
   /* Adjust as needed */
   animation:
     typing 10.5s steps(40, end),

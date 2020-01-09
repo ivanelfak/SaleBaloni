@@ -36,8 +36,8 @@ $mail->SMTPAutoTLS = false;
 // In this case, we setup a test email account with the following credentials:
 // email: send_from_PHPMailer@bradm.example.com
 // pass: password
-$mail->Username = "ivan.todorovic.m@gmail.com";  // SMTP username
-$mail->Password = "pravoslavlje."; // SMTP password
+$mail->Username = "dekoracijerancic@gmail.com";  // SMTP username
+$mail->Password = "0653415898"; // SMTP password
 
 // $email is the user's email address the specified
 // on our contact us page. We set this variable at
@@ -49,7 +49,7 @@ $mail->setFrom($email, "");
 $mail->addReplyTo($email, $name);
 
 // below we want to set the email address we will be sending our email to.
-$mail->AddAddress("ivan.todorovic.m@gmail.com", "");
+$mail->AddAddress("dekoracijerancic@gmail.com", "");
 $mail->addBCC($email, $name);
 
 // set word wrap to 50 characters
