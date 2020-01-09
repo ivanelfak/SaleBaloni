@@ -872,6 +872,10 @@ h1:before {
   }
 }
 
+.section-form{
+  min-height: 100vh;
+}
+
 .section-group {
   display: flex;
   flex-direction: column;
@@ -910,7 +914,6 @@ input[type=radio]{
   margin-bottom: 10px;
   margin-top: 10px;
 }
-
 textarea {
   height: 100px;  
 }
@@ -994,6 +997,10 @@ input[type=submit] {
 }
 
 @media screen and (min-width:478px) {
+
+  .section-form{
+  min-height: 80vh;
+}
   .form-button {
     display: flex;
     flex-wrap: wrap;
