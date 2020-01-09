@@ -1056,11 +1056,17 @@ footer {
   align-items: baseline;
 }
 
-.footer-text {
+.footer-text a  {
   text-transform: uppercase;
   font-size: 10px;
   color: var(--mainWhite);
   margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 2s ease;
+}
+
+.footer-text a:hover  {
+color: var(--mainBlue);
 }
 
 .footer-icons {
