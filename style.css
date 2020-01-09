@@ -612,6 +612,7 @@ h1:before {
   color: var(--mainWhite);
   background: transparent;
   font-size: 2rem;
+  text-align: justify;
   padding: 20px;
   font-family: monospace;
   overflow: hidden;
