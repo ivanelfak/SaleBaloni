@@ -1121,8 +1121,8 @@ color: var(--mainBlue);
     display: none;
   }
 
-  .footer-text {
-    font-size: 8px;
+  .footer-text a {
+    font-size: 5px;
   }
 }
 
