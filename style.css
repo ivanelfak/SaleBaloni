@@ -50,6 +50,7 @@ section {
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
     url(img/banner/mickey_banner_.jpg) center/cover fixed no-repeat;
+    
 }
 
 #nav {
@@ -639,7 +640,7 @@ h1:before {
   }
 
   to {
-    width: 100%
+    width: 90%
   }
 }
 
@@ -1057,7 +1058,7 @@ input[type=submit] {
   }  
 }
 
-footer {
+.footer {
   background: var(--mainBlack);
   padding: 20px;
   display: flex;
