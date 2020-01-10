@@ -32,7 +32,7 @@ font-family: 'Montserrat', sans-serif;*/
 
 body,
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Loto", sans-serif;
   background: var(--mainWhite);
 }
 
@@ -608,13 +608,13 @@ h1:before {
   z-index: 0;
 }
 
-.typewriter h1 {
+.typewriter p {
   color: var(--mainWhite);
   background: transparent;
   font-size: 2rem;
   text-align: justify;
   padding: 20px;
-  font-family: monospace;
+  font-family: "Montserrat";
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid var(--maninYellow);
@@ -623,8 +623,8 @@ h1:before {
   /* Keeps the content on a single line */
   margin: 50px auto;
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: -.05em;
-  word-spacing: -7px;
+  letter-spacing: .10em;
+  word-spacing: -5px;
   /* Adjust as needed */
   animation:
     typing 10.5s steps(40, end),
