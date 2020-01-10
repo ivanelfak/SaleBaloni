@@ -657,8 +657,11 @@ h1:before {
 }
 
 @media screen and (max-width:776px) {
-  .typewriter h1 {
-    font-size: 1rem;
+  .typewriter p {
+    font-size: 1rem;    
+    word-spacing: -2px;
+    animation: none;
+    text-align: left;
   }
 }
 
@@ -894,7 +897,7 @@ h1:before {
 
 
 .contact-form {
-  width: 90%;
+  width: 100%;
 }
 
 input[type=text],
